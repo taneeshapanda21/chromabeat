@@ -1,13 +1,9 @@
 # ChromaBeat
 **by Taneesha Panda**
 
-My inspiration for ChromaBeat came from a combination of audio-visual works: Golan Levin's YellowTail, Eric Rosenbaum's Singing Fingers, and numerous audio visualizers I've seen online. There's a lot of spectral audio visualizers for EDM/dubstep music and I find them really mesmerizing — they make the invisible parts of sound visually tangible.
+My inspiration for ChromaBeat came from a combination of generic spectral audio visualizers and a couple of specific audio-visual works — namely Golan Levin's YellowTail and Eric Rosenbaum's Singing Fingers. 
 
-I wanted to bring that concept into an interactive form by turning sound into an expressive medium. This tool allows the brush itself to change with different parts of the sound spectrum while giving the user full control over color and gesture. The result is a creative space where music directly shapes the artwork being made.
-
-## How it works
-
-ChromaBeat uses the Fast Fourier Transform (FFT) from the p5.js sound library to analyze the loaded audio in real time. The signal is broken down into its component frequencies every frame, giving continuously updated energy levels for the bass, mid, and treble ranges. The strokes aren't static once drawn, as each stroke remembers which band it was painted with, and its width is recalculated every frame from that band's current energy. That means even strokes from a few seconds ago keep breathing and pulsing in sync with the music as the song plays on.
+I wanted to bring that concept into an interactive form by turning sound into an expressive medium. This tool allows brush strokes to change with different parts of the sound spectrum while giving the user full control over color and gesture. It uses the Fast Fourier Transform (FFT) from the p5.js sound library to analyze audio, breaking down the signal into its component frequencies to get bass, mid, and treble ranges. The strokes aren't static either, as each stroke remembers which band it was painted with, and its width is recalculated every frame from that band's current energy. That means even strokes from a few seconds ago continue to pulse in sync with the music as it plays.
 
 **Features:**
 
