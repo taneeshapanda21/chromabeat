@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ChromaBeat</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="wordmark">
+        <h1>ChromaBeat</h1>
+        <div class="eq" id="eq" aria-hidden="true">
+          <span class="eq-bar eq-bass" id="eqBass"></span>
+          <span class="eq-bar eq-mid" id="eqMid"></span>
+          <span class="eq-bar eq-treble" id="eqTreble"></span>
+        </div>
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="control-deck">
+        <div id="toolbar" class="toolbar"></div>
+
+        <details class="help">
+          <summary>How to use</summary>
+          <ol>
+            <li>Load a track (.mp3, .wav, .m4a)</li>
+            <li>Pick a color</li>
+            <li>Choose a frequency band to paint with</li>
+            <li>Click and drag on the canvas</li>
+          </ol>
+          <p class="help-keys">Shortcuts: <kbd>1</kbd> bass · <kbd>2</kbd> mid · <kbd>3</kbd> treble · <kbd>C</kbd> clear</p>
+        </details>
+      </aside>
+
+      <main>
+        <div id="canvas-holder" class="canvas-holder"></div>
+      </main>
+    </div>
+
+    <script src="sketch.js"></script>
+  </body>
+</html>
