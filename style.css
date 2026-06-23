@@ -89,7 +89,7 @@ body.light-mode .track-status .dot {
 body.light-mode .btn-clear {
   background: #f6f6f6;
   border-color: #ddd;
-  color: #c42d56;
+  color: #911637;
 }
 
 body.light-mode .help kbd,
@@ -414,7 +414,7 @@ input[type="color"] {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  border: 2px solid var(--hairline);
+  border: 1px solid #46464c;
   padding: 0;
   cursor: pointer;
   background: none;
